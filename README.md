@@ -5,11 +5,10 @@ To Implement Banker’s Algorithm.
 ## ALGORITHM:
 ```
 1.	Initialize variables: Initialize an f array of size n to all zeros, calculate the need matrix, and initialize a y variable to zero.
-2.	Iterate over processes: For each process i: 
-o	If process i has not finished executing, check if all of the resources that process i needs are available. If so: 
-	Set f[i] = 1 to indicate that process i has finished executing.
-	Add process i to the ans array.
-	Update the avail array to reflect the fact that process i has finished executing.
+2.	Iterate over processes: For each process i: If process i has not finished executing, check if all of the resources that process i needs are available. If so: 
+	i.Set f[i] = 1 to indicate that process i has finished executing.
+	ii.Add process i to the ans array.
+	iii.Update the avail array to reflect the fact that process i has finished executing.
 3.	Check if all processes have finished executing: If all of the elements of the f array are equal to one, then all of the processes have finished executing and the system is safe.
 4.	Print the SAFE Sequence: If the system is safe, print the SAFE Sequence.
 5.	Print a message indicating that the system is not safe: If the system is not safe, print a message indicating that the system is not safe.
